@@ -31,4 +31,4 @@ jobs:
           environment_name: Blogs-app-benstalk-env  # Replace with your Elastic Beanstalk environment name
           region: us-east-1  # Replace with your AWS region
           version_label: v1  # Unique version label
-          artifact_path: application.zip
+          deployment_package: application.zip
