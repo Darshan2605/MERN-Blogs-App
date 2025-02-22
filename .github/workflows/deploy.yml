@@ -24,6 +24,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: 'blogs-app-benstalk'
           environment_name: 'Blogs-app-benstalk-env'
-          version_label: v2
+          version_label: v3
           region: us-east-1
           deployment_package: deploy-package.zip
