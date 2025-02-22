@@ -14,8 +14,12 @@
     </div>
 
     <div class="container mt-4">
-      <img src="<%= blog.createdBy.profileImageURL %>" width="50px" /> <%=
-      blog.createdBy.fullName %>
+      <% if (blog.createdBy) { %>
+        <img src="<%= blog.createdBy.profileImageURL %>" width="50px" />
+        <%= blog.createdBy.fullName %>
+      <% } else { %>
+        <p>Author information not available</p>
+      <% } %>
     </div>
 
     <div class="container mt-3">
